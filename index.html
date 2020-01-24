@@ -5,9 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="main.css" rel="stylesheet" type="text/css">
-    <title>GitHub Repository Search</title>
+    <title>GitHub Repository Search Tool</title>
 </head>
 <body>
+    <header role="banner" aria-live="polite">
+        <h1>GitHub Repository Search Tool</h1>
+    </header>
+    <p>Want to find a certain user's repositories? Look no further! Just type in the user's GitHub handle below.</p>
+    <form id="user-entry">
+        <span class="description">GitHub Handle: </span><input type="text" id="handle-input" placeholder="ex. johndoe1" aria-label="Username Entry"></input>
+        <input type="submit" value="Search Handle" aria-label="Submit Button"></input>
+    </form>
+    <p id="error"></p>
+    <section class="hidden" id="repo-results">
+        <h2>GitHub Repositories for <span id="handle-text"></span></h2>
+        <ul id="repos-list"></ul>
+    </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" crossorigin="anonymous"></script>
     <script src="main.js"></script>
 </body>

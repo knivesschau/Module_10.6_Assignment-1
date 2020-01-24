@@ -1,0 +1,22 @@
+body {
+    border: solid 2px black;
+}
+
+p, .description, input[type="submit"] {
+    font-size: 20px;
+}
+
+#error {
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+}
+
+.hidden {
+    display:none;
+}
+
+ul {
+    list-style: none;
+    font-size: 18px;
+}

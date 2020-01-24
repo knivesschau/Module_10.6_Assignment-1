@@ -1,9 +1,15 @@
 body {
     border: solid 2px black;
+    padding: 40px;
 }
 
-p, .description, input[type="submit"] {
+p, .description, input[type="submit"], input[type="text"] {
     font-size: 20px;
+}
+
+input[type="submit"] {
+    width: 100px;
+    text-align: left;
 }
 
 #error {
